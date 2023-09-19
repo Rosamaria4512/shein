@@ -9,5 +9,5 @@ public class LaptopInterface {
     public static final Target BUY_PRODUCT= Target.the("comprar laptop").locatedBy("(//a[@href=\"#\"])[7]");
     public static final Target TO_CARRITO= Target.the("ir al carrito ").locatedBy("//a[@href='cart.html']");
     public static final Target CONTENEDOR_PRODUCTS=Target.the("Cobtenedor de productos").locatedBy("//tr[@class=\"success\"]");
-    public static final Target TEXT_DELETE= Target.the("eliminar compra ").locatedBy("//a[text()=\"Delete\"]");
+    public static final Target TEXT_DELETE= Target.the("eliminar compra ").locatedBy("(//a[@href='#'])[8]");
 }

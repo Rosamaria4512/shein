@@ -5,11 +5,16 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import org.openqa.selenium.WebElement;
 
-public class ValidarContenedor implements Question {
+import java.sql.Driver;
+
+public class ValidarContenedor implements Question<Boolean> {
     @Override
-    public Object answeredBy(Actor actor) {
-        WebElement webElement;
-        webElement=
-        return null;
+    public Boolean answeredBy(Actor actor) {
+        return LaptopInterface.CONTENEDOR_PRODUCTS.resolveFor(actor).isPresent();
     }
+
+    public static ValidarContenedor validarContenedor(){
+        return new ValidarContenedor();
+    }
+
 }

@@ -1,5 +1,6 @@
 package com.co.shein.stepsdefinitions;
 
+import com.co.shein.questions.ValidarContenedor;
 import com.co.shein.questions.ValidationBuyLaptod;
 import com.co.shein.tasks.DeleteProductTask;
 import com.co.shein.tasks.LaptopTask;
@@ -30,7 +31,7 @@ public class BuyLaptodStepDefinition {
 
     @Then("^the user see that not there is products$")
     public void theUserSeeThatNotThereIsProducts() {
-
+      OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidarContenedor.validarContenedor(),Matchers.equalTo(Boolean.FALSE)));
 
     }
 
