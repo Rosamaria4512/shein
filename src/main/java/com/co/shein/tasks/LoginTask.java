@@ -21,7 +21,7 @@ public class LoginTask implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-
+        actor.attemptsTo(Click.on(LoginPage.BTN_LOGIN));
         actor.attemptsTo(Enter.theValue(dataLogin.getUser()).into(LoginPage.TXT_USER));
         actor.attemptsTo(Enter.theValue(dataLogin.getPassword()).into(LoginPage.TXT_PASS));
         actor.attemptsTo(Click.on(LoginPage.BTN_LOGIN));
