@@ -1,6 +1,6 @@
 Feature: Buy a Monitor
   i need buy a phone
-  Scenario: Buy Monitor Successfull
+  Scenario: Agregate Monitor Successfull
     Given he user enter a the website
     When the user select a Monitor and go to carrito
     Then the user will see his monitor

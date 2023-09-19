@@ -1,6 +1,6 @@
 Feature: Buy a Phone
   i need buy a phone
-  Scenario: Buy Phone Successfull
+  Scenario: Agregate Phone Successfull
     Given he user enter a the website
     When the user select a phone and go to carrito
     Then the user will see his phone
