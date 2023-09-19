@@ -29,7 +29,6 @@ public class LoginStepDefiniton {
     @Given("^he user enter a the website$")
     public void heUserEnterATheWebsite() {
         OnStage.theActorInTheSpotlight().attemptsTo(Open.url("https://www.demoblaze.com/index.html"));
-
     }
 
 
