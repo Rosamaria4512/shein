@@ -16,13 +16,12 @@ public class BuyMonitorStepsDefinition {
     public void theUserSelectAMonitorAndGoToCarrito() {
         OnStage.theActorInTheSpotlight().attemptsTo(MonitorTask.monitorTask());
     }
-
-
     @Then("^the user will see his monitor$")
     public void theUserWillSeeHisMonitor() {
         GivenWhenThen.seeThat(ValidationBuyLaptod.validationBuyLaptod(), Matchers.is("Delete"));
 
     }
+//----------------------------------------------------------------------------------------------------------------
 
     @When("^the user select a monitor and the agregate a carrito for delete$")
     public void theUserSelectAMonitorAndTheAgregateACarritoForDelete() {

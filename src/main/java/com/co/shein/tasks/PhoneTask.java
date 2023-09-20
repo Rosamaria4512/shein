@@ -12,6 +12,11 @@ public class PhoneTask implements Task {
         actor.attemptsTo(Click.on(PhoneInterface.BTN_CELULARES));
         actor.attemptsTo(Click.on(PhoneInterface.OP_CELULARES));
         actor.attemptsTo(Click.on(PhoneInterface.BUY_CELULARES));
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         actor.attemptsTo(Click.on(PhoneInterface.TO_CARRITO));
         try {
             Thread.sleep(4000);
