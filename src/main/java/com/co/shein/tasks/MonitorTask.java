@@ -13,7 +13,12 @@ public class MonitorTask implements Task {
         actor.attemptsTo(Click.on(MonitorInterface.BTN_MONITOR));
         actor.attemptsTo(Click.on(MonitorInterface.OP_MONITOR));
         actor.attemptsTo(Click.on(MonitorInterface.BUY_MONITOR));
-        actor.attemptsTo(Click.on(PhoneInterface.TO_CARRITO));
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        actor.attemptsTo(Click.on(MonitorInterface.TO_CARRITO));
         try {
             Thread.sleep(4000);
         } catch (InterruptedException e) {
