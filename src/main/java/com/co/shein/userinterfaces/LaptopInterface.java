@@ -10,4 +10,5 @@ public class LaptopInterface {
     public static final Target TO_CARRITO= Target.the("ir al carrito ").locatedBy("//a[@href='cart.html']");
     public static final Target CONTENEDOR_PRODUCTS=Target.the("Cobtenedor de productos").locatedBy("//tr[@class=\"success\"]");
     public static final Target TEXT_DELETE= Target.the("eliminar compra ").locatedBy("(//a[@href='#'])[8]");
+    public static final Target BTN_BUY= Target.the("compra").locatedBy("//button[@class=\"btn btn-success\"]");
 }
